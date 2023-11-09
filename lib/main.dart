@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movies_search/search_screen.dart';
+import 'package:movies_search/search/search_screen.dart';
 
 void main() {
   runApp(MyApp());
