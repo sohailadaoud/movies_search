@@ -15,7 +15,7 @@ class SearchScreen extends StatelessWidget {
           SizedBox(
             height: 40,
           ),
-          TextFormField(
+          TextField(
             onTap: () {
               showSearch(context: context, delegate: SearchDeligate());
             },

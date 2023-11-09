@@ -23,7 +23,9 @@ class SearchDeligate extends SearchDelegate {
   @override
   Widget? buildLeading(BuildContext context) {
     return IconButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).pop();
+        },
         icon: Icon(
           Icons.close,
           color: Colors.white,
