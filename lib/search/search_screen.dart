@@ -65,11 +65,11 @@ class _SearchScreenState extends State<SearchScreen> {
 
                         return ListTile(
                           leading: Container(
-                              width: 70,
-                              height: 70,
+                              width: 100,
+                              height: 100,
                               child: Image.network(
                                 posterUrl,
-                                fit: BoxFit.cover,
+                                fit: BoxFit.fill,
                               )),
                           title: Text(
                             movie['title'],
