@@ -59,7 +59,18 @@ class _SearchScreenState extends State<SearchScreen> {
                       itemCount: searchResult['results'].length,
                       itemBuilder: (context, index) {
                         final movie = searchResult['results'][index];
+                        final posterPath = movie['poster_path'];
+                        final posterUrl =
+                            'https://image.tmdb.org/t/p/w500/$posterPath';
+
                         return ListTile(
+                          leading: Container(
+                              width: 70,
+                              height: 70,
+                              child: Image.network(
+                                posterUrl,
+                                fit: BoxFit.cover,
+                              )),
                           title: Text(
                             movie['title'],
                             style: TextStyle(color: Colors.white),
